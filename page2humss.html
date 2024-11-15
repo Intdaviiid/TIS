@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+    <title>Taguig Integrated School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D6C0B3;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes bounceInUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            60% {
+                transform: translateY(-10%);
+                opacity: 1;
+            }
+            80% {
+                transform: translateY(5%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .bounceInUp {
+            animation: bounceInUp 1s ease;
+        }
+
+        header {
+            background-color: #AB886D;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #493628;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 var(--nav-link-spacing, 15px);
+            position: relative;
+            font-size: 20px;
+        }
+        
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+       
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #AB886D;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-size: 18px;
+        }
+        .dropdown-content a:hover {
+            background-color: #777;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            border: 2px solid #493628;
+            background-color: #fff;
+        }
+
+        .left-image-container {
+            margin-right: 20px;
+        }
+
+        .center-content {
+            flex: 1;
+            animation: bounceInUp 1s ease;
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .video-iframe {
+            width: 800px;
+            height: 450px;
+        }
+        footer {
+            background-color: #AB886D;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+            border-radius: 10px;
+        }
+
+        section .center-content h2:not(:first-child), 
+        .video-container, 
+        section p, 
+        footer {
+            animation: bounceInUp 1s ease;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Standalone Senior Highschool Within Taguig Integrated School</h1>
+        <img src="http://assets.onecompiler.app/42tzqnhxe/42xvy4vhs/image_2024-11-12_172405392.png" width="100" height="100">
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="activities.html">Events</a>
+        <div class="dropdown">
+            <a href="#">Strands</a>
+            <div class="dropdown-content">
+                <a href="page1amb.html">abm</a>
+                <a href="page2humss.html">humss</a>
+                <a href="page3stem.html">stem</a>
+                <a href="page4tvl.html">tvl</a>
+            </div>
+        </div>
+        <a href="contacts.html">Contact</a>
+    </nav>
+   
+    <div class="center-content">
+        <h2>Why Should you be on HUMSS?</h2>
+        <section>
+            <div class="left-image-container">
+                <img src="https://assets.onecompiler.app/42tzqnhxe/42xvy4vhs/schoolbackground.jpg" width="500" height="250" alt="School Background">
+            </div>
+            <div>
+                <p>The Humanities and Social Sciences (HUMSS) strand in senior tall school is outlined for understudies who have an intrigued in understanding human behavior, society, and culture. It centers on creating aptitudes in communication, basic considering, inquire about, and social examination, planning understudies for careers in areas such as law, news coverage, brain research, instruction, and social work.
+                    The humanities component of HUMSS covers subjects like writing, logic, and history. Understudies investigate the works of creators, scholars, and authentic occasions to pick up a more profound understanding of human encounter and social advancement. Exercises frequently incorporate perusing and analyzing scholarly writings, locks in in philosophical dialogs, and considering the affect of authentic occasions on society.
+                    </p>
+            </div>
+        </section>
+        <section> 
+        <p class="center-text">The social sciences angle centers on subjects like brain research, humanism, political science, and financial matters. Understudies learn almost human behavior, societal structures, and the working of governments and economies. Exercises incorporate conducting investigate, analyzing social issues, and examining the flow of social connections. These subjects offer assistance understudies get it how people and bunches connected inside different societal settings.
+            <br>
+            Communication abilities are a key center within the HUMSS strand. Understudies create their composing, talking, and introduction aptitudes, which are basic for careers in law, media, instruction, and counseling. They lock in in exercises such as wrangle about, open talking, composing expositions, and creating reports, all of which improve their capacity to specific thoughts clearly and influentially<br>
+<br>
+The inquire about component in HUMSS makes a difference understudies create the capacity to conduct ponders and analyze information. Through investigate ventures and introductions, understudies learn how to accumulate data, assess sources, and display discoveries successfully. This plans them for higher instruction in areas that require solid investigate abilities, such as law, social science, and the scholarly world.
+<br>
+In general, the HUMSS strand gives understudies with a wide understanding of human society and culture, as well as the basic considering and communication aptitudes required to explore and contribute to the world around them. It is an perfect track for those trying to work in areas that require a profound understanding of human intuitive, societal issues, and the capacity to communicate viably. 
+</section>   </div>
+    
+    <footer>
+        <p>&copy; Decepticons</p>
+    </footer>
+</body>
+</html>

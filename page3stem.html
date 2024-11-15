@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+    <title>Taguig Integrated School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D6C0B3;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes bounceInUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            60% {
+                transform: translateY(-10%);
+                opacity: 1;
+            }
+            80% {
+                transform: translateY(5%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .bounceInUp {
+            animation: bounceInUp 1s ease;
+        }
+
+        header {
+            background-color: #AB886D;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #493628;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 var(--nav-link-spacing, 15px);
+            position: relative;
+            font-size: 20px;
+        }
+        
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+       
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #AB886D;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-size: 18px;
+        }
+        .dropdown-content a:hover {
+            background-color: #777;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            border: 2px solid #493628;
+            background-color: #fff;
+        }
+
+        .left-image-container {
+            margin-right: 20px;
+        }
+
+        .center-content {
+            flex: 1;
+            animation: bounceInUp 1s ease;
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .video-iframe {
+            width: 800px;
+            height: 450px;
+        }
+        footer {
+            background-color: #AB886D;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+            border-radius: 10px;
+        }
+
+        section .center-content h2:not(:first-child), 
+        .video-container, 
+        section p, 
+        footer {
+            animation: bounceInUp 1s ease;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Standalone Senior Highschool Within Taguig Integrated School</h1>
+        <img src="stem.png" width="100" height="100">
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="activities.html">Events</a>
+        <div class="dropdown">
+            <a href="#">Strands</a>
+            <div class="dropdown-content">
+                <a href="page1amb.html">gas</a>
+                <a href="page2humss.html">humss</a>
+                <a href="page3stem.html">stem</a>
+                <a href="page4tvl.html">tvl</a>
+            </div>
+        </div>
+        <a href="contacts.html">Contact</a>
+    </nav>
+   
+    <div class="center-content">
+        <h2>Why Should you be on STEM?</h2>
+        <section>
+            <div class="left-image-container">
+                <img src="https://assets.onecompiler.app/42tzqnhxe/42xvy4vhs/schoolbackground.jpg" width="500" height="250" alt="School Background">
+            </div>
+            <div>
+                <p>The STEM (Science, Innovation, Designing, and Science) strand in senior tall school prepares understudies with the information and abilities required for careers in logical and specialized areas. It's perfect for those fascinated by understanding the common world, working with innovation, understanding complex issues, and locks in in quantitative investigation. Here's a closer see at each component:
+                    The science portion covers subjects like science, chemistry, material science, and soil science. These courses lay the establishment for careers in healthcare, natural science, and inquire about. Understudies take part in lab tests, field thinks about, and inquire about ventures, picking up hands-on involvement and creating basic considering aptitudes.
+                    </p>
+            </div>
+        </section>
+        <section> 
+        <p class="center-text">Innovation centers on building advanced education through computer science, data innovation, and computerized media. Abilities picked up here are fundamental for IT, computerized plan, and programming careers. Exercises incorporate coding works out, program advancement, and computerized media ventures, all cultivating specialized development.
+            <br>
+            In designing, understudies learn fundamental designing standards, material science, and problem-solving. This component plans them for different designing areas, empowering inventiveness and explanatory aptitudes through exercises like model-building, mechanical technology, and mechanics ventures
+            <br>
+            The science portion covers progressed concepts such as polynomial math, calculus, insights, and trigonometry. Solid math abilities are vital for areas requiring explanatory capacities, like information science and financial matters. Exercises incorporate workshops, information investigation ventures, and math competitions to progress coherent considering and accuracy.
+            <br>
+            The STEM strand combines theoretical information with down to earth applications over science, innovation, designing, and math, planning understudies for college considers and high-demand, inventive careers. With a hands-on approach and multidisciplinary educational programs, it builds a strong establishment for future researchers, engineers, IT experts, and investigators, preparing them with both scholarly information and viable involvement in handling real-world issues. </section>   </div>
+        </section>
+    <footer>
+        <p>&copy; Decepticons</p>
+    </footer>
+</body>
+</html>

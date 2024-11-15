@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <title>Taguig Integrated School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D6C0B3;
+            margin: 0;
+            padding: 0;
+        }
+        
+        @keyframes bounceInUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            60% {
+                transform: translateY(-10%);
+                opacity: 1;
+            }
+            80% {
+                transform: translateY(5%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+        .bounceInUp {
+            animation: bounceInUp 1s ease;
+        }
+
+        header {
+            background-color: #AB886D;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #493628;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 var(--nav-link-spacing, 15px);
+            position: relative;
+            font-size: 20px;
+        }
+        
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+       
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #AB886D;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-size: 18px;
+        }
+        .dropdown-content a:hover {
+            background-color: #777;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            padding: 20px;
+        }
+        .center-content {
+            text-align: center;
+        }
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .video-iframe {
+            width: 800px;
+            height: 450px;
+        }
+        footer {
+            background-color: #AB886D;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+        }
+
+        section .center-content h2:not(:first-child), 
+        .video-container, 
+        section p, 
+        footer {
+            animation: bounceInUp 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Standalone Senior Highschool Within Taguig Integrated School</h1>
+        <img src="http://assets.onecompiler.app/42tzqnhxe/42xvy4vhs/image_2024-11-12_172405392.png" width="100" height="100">
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="activities.html">events</a>
+        <div class="dropdown">
+            <a href="#">Strands</a>
+            <div class="dropdown-content">
+                <a href="page1amb.html">abm</a>
+                <a href="page2humss.html">humss</a>
+                <a href="page3stem.html">stem</a>
+                <a href="page4tvl.html">tvl</a>>
+            </div>
+        </div>
+        <a href="contacts.html">Contact</a>
+    </nav>
+    <section>
+        <div class="center-content">
+            <h2>Upcoming events!</h2>
+            <img scr="speech.jpg">
+            <p class="center-content">test test test abm</p>
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Decepticons</p>
+    </footer>
+</body>
+</html>
