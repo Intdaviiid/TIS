@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taguig Integrated School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D6C0B3;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes bounceInUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            60% {
+                transform: translateY(-10%);
+                opacity: 1;
+            }
+            80% {
+                transform: translateY(5%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes slideInRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes glowingText {
+            0% {
+                color: #493628;
+                text-shadow: 0 0 5px #AB886D, 0 0 10px #AB886D, 0 0 15px #AB886D;
+            }
+            50% {
+                color: #AB886D;
+                text-shadow: 0 0 10px #D6C0B3, 0 0 20px #D6C0B3, 0 0 30px #D6C0B3;
+            }
+            100% {
+                color: #493628;
+                text-shadow: 0 0 5px #AB886D, 0 0 10px #AB886D, 0 0 15px #AB886D;
+            }
+        }
+
+        @keyframes randomStylingEffect {
+            0% {
+                transform: rotate(0deg) scale(1);
+                filter: brightness(100%);
+            }
+            50% {
+                transform: rotate(15deg) scale(1.1);
+                filter: brightness(120%);
+            }
+            100% {
+                transform: rotate(0deg) scale(1);
+                filter: brightness(100%);
+            }
+        }
+
+        .bounceInUp {
+            animation: bounceInUp 1s ease;
+        }
+
+        .randomAnimation {
+            animation: spin 2s linear infinite;
+        }
+
+        .transitionEffect {
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+
+        .transitionEffect:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        .slideInRight {
+            animation: slideInRight 1.5s ease-in-out;
+        }
+
+        .textEffect {
+            font-size: 24px;
+            animation: glowingText 2s infinite;
+            text-align: center;
+        }
+
+        .randomStyling {
+            animation: randomStylingEffect 2s infinite;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .randomStyling:hover {
+            transform: scale(1.2) rotate(10deg);
+            filter: brightness(140%);
+        }
+
+        header {
+            background-color: #AB886D;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #493628;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 var(--nav-link-spacing, 15px);
+            position: relative;
+            font-size: 20px;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #AB886D;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #777;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            border: 2px solid #493628; 
+            background-color: #fff;
+        }
+
+        .left-image-container {
+            margin-right: 20px;
+        }
+
+        .center-content {
+            flex: 1;
+            animation: bounceInUp 1s ease;
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .video-iframe {
+            width: 800px;
+            height: 450px;
+        }
+
+        footer {
+            background-color: #AB886D;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            clear: both;
+            border-radius: 10px;
+        }
+
+        section .center-content h2:not(:first-child), 
+        .video-container, 
+        section p, 
+        footer {
+            animation: bounceInUp 1s ease;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Standalone Senior Highschool Within Taguig Integrated School</h1>
+        <img src="http://assets.onecompiler.app/42tzqnhxe/42xvy4vhs/image_2024-11-12_172405392.png" width="100" height="100">
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="activities.html">Events</a>
+        <div class="dropdown">
+            <a href="#">Strands</a>
+            <div class="dropdown-content">
+                <a href="page1amb.html">gas</a>
+                <a href="page2humss.html">humss</a>
+                <a href="page3stem.html">stem</a>
+                <a href="page4tvl.html">eim</a>
+                <a href="page1ict.html">ict</a>
+            </div>
+        </div>
+        <a href="contacts.html">Contact</a>
+    </nav>
+   
+    <div class="center-text">
+        <h2>required codes</h2>
+        <section>
+            <div class="-image-container">
+                <img src="gas.png" class="randomAnimation" width="500" height="250" alt="image 1">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <img src="gas.png" class="transitionEffect" width="500" height="250" alt="image 2">
+                <img src="gas.png" class="slideInRight" width="500" height="250" alt="image 3">
+                <img src="gas.png" class="randomStyling" width="500" height="250" alt="image 4">
+                <img src="gas.png" width="500" height="250" alt="image 5">
+                <img src="gas.png" width="500" height="250" alt="image 6">
+            </div>
+        </section>
+        <section> 
+            <p class="textEffect">test</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; Decepticons</p>
+    </footer>
+</body>
+</html>
